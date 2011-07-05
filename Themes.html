@@ -537,7 +537,7 @@ Also see [[AdvancedOptions]]</pre>
 &lt;!--}}}--&gt;
 </pre>
 </div>
-<div title="CleanBase1StyleSheet" creator="DanielKriesten" modifier="DanielKriesten" created="201006141817" modified="201006161202" tags="CleanBase1 systemTheme" changecount="6">
+<div title="CleanBase1StyleSheet" creator="DanielKriesten" modifier="YourName" created="201006141817" modified="201107051331" tags="CleanBase1 systemTheme" changecount="7">
 <pre>/*{{{*/
 /* CleanBase 1 */
 /* a Theme based on : */
@@ -564,8 +564,20 @@ body {
 #mainMenu {
 	width: 150px; /* needed for search field in ie8, firefox, chrome */
 	background: [[ColorPalette::Background]];
-	border-right: 2px [[ColorPalette::TertiaryMid]] solid;
-	border-bottom: 2px [[ColorPalette::TertiaryMid]] solid;
+
+	/*border-right: 2px [[ColorPalette::TertiaryMid]] solid;*/
+	/*border-bottom: 2px [[ColorPalette::TertiaryMid]] solid;*/
+
+	-webkit-box-shadow: 2px 2px 15px [[ColorPalette::TertiaryMid]];
+	-moz-box-shadow: 2px 2px 15px [[ColorPalette::TertiaryMid]];
+	-khtml-box-shadow: 2px 2px 15px [[ColorPalette::TertiaryMid]];
+	box-shadow: 2px 2px 15px [[ColorPalette::TertiaryMid]];
+
+	-webkit-border-radius: 5px; /* f&#252;r Webkitbrowser */
+	-moz-border-radius: 5px; /* f&#252;r Geckobrowser */
+	-khtml-border-radius: 5px; /* f&#252;r KHTML-Browser */
+	border-radius: 5px; /* Die zuk&#252;nftige CSS 3.0 Deklaration */
+
 	margin: 1em 0em 0em 0.4em;
 	padding-bottom: 2em;
 }
@@ -579,8 +591,20 @@ body {
 /* give tiddlers 3d style border and explicit background */
 .tiddler {
 	background: [[ColorPalette::Background]];
-	border-right: 2px [[ColorPalette::TertiaryMid]] solid;
-	border-bottom: 2px [[ColorPalette::TertiaryMid]] solid;
+
+	/*border-right: 2px [[ColorPalette::TertiaryMid]] solid;*/
+	/*border-bottom: 2px [[ColorPalette::TertiaryMid]] solid;*/
+
+	-webkit-box-shadow: 3px 3px 10px [[ColorPalette::TertiaryMid]];
+	-moz-box-shadow: 3px 3px 10px [[ColorPalette::TertiaryMid]];
+	-khtml-box-shadow: 3px 3px 10px [[ColorPalette::TertiaryMid]];
+	box-shadow: 3px 3px 10px [[ColorPalette::TertiaryMid]];
+
+	-webkit-border-radius: 10px; /* f&#252;r Webkitbrowser */
+	-moz-border-radius: 10px; /* f&#252;r Geckobrowser */
+	-khtml-border-radius: 10px; /* f&#252;r KHTML-Browser */
+	border-radius: 10px; /* Die zuk&#252;nftige CSS 3.0 Deklaration */
+
 	margin-bottom: 1em;
 	padding-bottom: 2em;
 }
@@ -843,7 +867,7 @@ I've just tweaked my gradient colours and the topMenu bit. See HorizontalMainMen
 &lt;!--}}}--&gt;
 </pre>
 </div>
-<div title="HorizontalMainMenuStyles" modifier="DanielKriesten" created="200601101028" modified="201007071243" tags="HorizontalMainMenu systemTheme" server.page.revision="200603060257" server.host="danielbaird.com/tiddlywinks" server.type="file" changecount="1">
+<div title="HorizontalMainMenuStyles" modifier="DanielKriesten" created="200601101028" modified="201007071243" tags="HorizontalMainMenu systemTheme" changecount="1" server.type="file" server.host="danielbaird.com/tiddlywinks" server.page.revision="200603060257">
 <pre>/***
 To use, add {{{[[HorizontalMainMenuStyles]]}}} to your StyleSheet tiddler, or you can just paste the CSS in directly. See also HorizontalMainMenu and PageTemplate.
 ***/
@@ -1406,8 +1430,8 @@ h3 {font-size: 14px;}
 
 /*}}}*/</pre>
 </div>
-<div title="PageTemplate" creator="DanielKriesten" modifier="YourName" created="201006141828" modified="201008191851" changecount="5">
-<pre>[[CleanBase2PageTemplate]]</pre>
+<div title="PageTemplate" creator="DanielKriesten" modifier="YourName" created="201006141828" modified="201107051332" changecount="6">
+<pre>[[CleanBase1PageTemplate]]</pre>
 </div>
 <div title="PaletteViewMacro" modifier="FND" created="200711180822" modified="200711202208" tags="plugins macros systemConfig">
 <pre>/***
@@ -1476,7 +1500,7 @@ config.macros.paletteView.isColor = function(s) {
 };
 //}}}</pre>
 </div>
-<div title="QuickOpenTagPlugin" modifier="DanielKriesten" created="200601091642" modified="201007071248" tags="systemConfig" server.page.revision="200602091003" server.host="danielbaird.com/tiddlywinks" server.type="file" changecount="2">
+<div title="QuickOpenTagPlugin" modifier="DanielKriesten" created="200601091642" modified="201007071248" tags="systemConfig" changecount="2" server.type="file" server.host="danielbaird.com/tiddlywinks" server.page.revision="200602091003">
 <pre>/***
 | Name:|QuickOpenTagPlugin|
 | Purpose:|Makes tag links into a Taggly style open tag plus a normal style drop down menu|
@@ -1553,7 +1577,7 @@ setStylesheet(
 ***/
 </pre>
 </div>
-<div title="SideBarWhiteAndGrey" modifier="DanielKriesten" created="200601072255" modified="201007071248" server.page.revision="200601112248" server.host="danielbaird.com/tiddlywinks" server.type="file" changecount="2">
+<div title="SideBarWhiteAndGrey" modifier="DanielKriesten" created="200601072255" modified="201007071248" changecount="2" server.type="file" server.host="danielbaird.com/tiddlywinks" server.page.revision="200601112248">
 <pre>/***
 This CSS by DaveBirss.
 ***/
@@ -1684,10 +1708,10 @@ This CSS by DaveBirss.
 <div title="SiteUrl" creator="DanielKriesten" modifier="DanielKriesten" created="201006141919" changecount="1">
 <pre>file:///Users/krid/Sites/tiddlywiki_Themes/empty.html</pre>
 </div>
-<div title="StyleSheet" creator="DanielKriesten" modifier="YourName" created="201006141828" modified="201008191851" changecount="9">
-<pre>[[CleanBase2StyleSheet]]</pre>
+<div title="StyleSheet" creator="DanielKriesten" modifier="YourName" created="201006141828" modified="201107051332" changecount="10">
+<pre>[[CleanBase1StyleSheet]]</pre>
 </div>
-<div title="TagglyListPlugin" modifier="DanielKriesten" created="200601140102" modified="201007071254" tags="systemConfig TagglyTagging" server.page.revision="200603060947" server.host="danielbaird.com/tiddlywinks" server.type="file" changecount="5">
+<div title="TagglyListPlugin" modifier="DanielKriesten" created="200601140102" modified="201007071254" tags="systemConfig TagglyTagging" changecount="5" server.type="file" server.host="danielbaird.com/tiddlywinks" server.page.revision="200603060947">
 <pre>/***
 |Name|TagglyListPlugin|
 |Created by|SimonBaird|
@@ -2243,7 +2267,7 @@ store.removeTiddler = function(title) {
 &lt;br/&gt;
 &lt;!--}}}--&gt;</pre>
 </div>
-<div title="TagglyTaggingStyles" modifier="DanielKriesten" created="200601101205" modified="201007071248" tags="TagglyTagging" server.page.revision="200602122358" server.host="danielbaird.com/tiddlywinks" server.type="file" changecount="2">
+<div title="TagglyTaggingStyles" modifier="DanielKriesten" created="200601101205" modified="201007071248" tags="TagglyTagging" changecount="2" server.type="file" server.host="danielbaird.com/tiddlywinks" server.page.revision="200602122358">
 <pre>/***
 To use, add {{{[[TagglyTaggingStyles]]}}} to your StyleSheet tiddler, or you can just paste the CSS in directly. See also ViewTemplate, EditTemplate and TagglyTagging.
 ***/
